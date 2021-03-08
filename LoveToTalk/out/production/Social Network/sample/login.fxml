@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="socialnetwork.gui.ControllerLogin"
+            prefHeight="200.0" prefWidth="300.0">
+    <GridPane alignment="center" hgap="10" vgap="10">
+        <padding><Insets top="25" bottom="10" left="25"/></padding>
+        <Label text="User Name:"
+               GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField fx:id="usernameField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+        <Label text="Password :"
+               GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <PasswordField fx:id="passwordField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+        <Button
+                text="Sign in"
+                GridPane.halignment="center"
+                GridPane.valignment="center"
+                GridPane.rowIndex="2" GridPane.columnIndex="1"
+                minWidth="10" minHeight="10"
+                onAction="#handleSigninButton"
+        ></Button>
+    </GridPane>
+
+</AnchorPane>
